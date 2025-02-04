@@ -1,0 +1,184 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family:  -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Ubuntu, Helvetica Neue, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+    box-sizing: border-box;
+    font-weight: normal;
+}
+
+  .header-top {
+    background-color: #000000;
+    color: #ffffff;
+    cursor: pointer;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    letter-spacing: 1px;
+    border-bottom: 1px solid rgb(44, 44, 44);
+  }
+  .header-top:hover{
+    background-color: #282727;
+  }
+  .header-top p{
+    margin-right: 10px;
+    margin-top: 35px;
+  }
+  .fa-arrow-right{
+    transition: transform 0.3s ease-in-out;
+    transform-origin: left center;
+  }
+  .header-top:hover .fa-arrow-right {
+      transform: scaleX(1.5); 
+  }
+  .header-fixed {
+    background-color: #121212;
+    color: #ffffff;
+    height: 89px; This makes the element stick to the top */
+    width: 100%;
+    display:flex;
+    justify-content: space-between; /* Distributes items evenly */
+    align-items: center;
+    padding: 20px 20px 30px 80px;
+    overflow: hidden;
+  }
+  .first{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .first a{
+    text-decoration: none;
+    color: #b7b5b5;
+    padding: 10px;
+  }
+  .first a:hover{
+    color: #ffffff;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  .second{
+    display: flex;
+    align-items: center;
+    padding-top: 60px 90px;
+    margin-right: 20px;
+  } 
+  .second img{
+    margin-right: 20px;
+    margin-top: 60px;
+    transition: transform 0.3s easein-out;
+  }
+  .second img:hover{
+    transform: scale(1.1);
+  }
+  .bot {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: repeat(3, 1fr);
+    width: 100%;
+    height: 100vh;
+    column-gap: 4%;
+    row-gap: 12px;
+    padding: 35px 6.2% 20px 6.2%;
+  }
+  .bot img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  section{
+    display: grid;
+    grid-template-columns: 1.16fr 2.5fr;
+    height: 100vh;
+    margin-top: 40%;
+    padding: 50px;
+    margin-left: 20px;
+  }
+  .photo img{
+    width: 100%;
+    height: auto;
+  }
+  .note{
+    padding: 60px;
+    margin-left: 20px;
+  }
+  .note h3, p, a{
+    margin-bottom: 38px;
+  }
+  .note h3{
+    font-size: 24px;
+  }
+  .note p{
+    font-size: 19.8px;
+    font-weight: lighter;
+  }
+  .note a{
+    font-size: 16.5px;
+    transition: transform 0.01s ease-in-out;
+  }
+  .note a:hover{
+    transform: scale(1.001);
+  }
+  footer{
+    background-color: black;
+    width: 100%;
+    height: 75vh;
+    color: #ffffff;
+    padding: 20px;
+    display: grid;
+    padding: 50px 0;
+    gap: 10px;
+  }
+  footer ul{
+    list-style: none;
+    text-align: center;
+    font-size: 19px;
+    margin-top: -25px;
+  }
+  ul li{
+    padding: 10px 0;
+  }
+  ul li a{
+    color: #b7b5b5;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  footer a:hover{
+    color: #ffffff;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  ul li a img{
+    margin-top: 30px;
+    transition: transform 0.3s easein-out;
+  }
+  ul li a img:hover{
+    transform: scale(1.1);
+  }
+  .contact{
+    border-bottom: 1px solid rgb(44, 44, 44);
+    padding-bottom: 70px;
+  }
+  footer .policy{
+    display: flex;
+    padding-left: 70px;
+    padding-top: 60px;
+  }
+  .policy a, .policy p{
+    text-decoration: none;
+    color: #b7b5b5;
+    font-size: 12px;
+  }
+  .policy a:not(:nth-child(2)):not(:last-child)::after {
+    content: ".";  /* Adds a dot between links */
+    margin: 0 10px; /* Space between dot and link */
+  }
+  .policy a:nth-child(2){
+    margin-right: 10px;
+  }
+  .policy p{
+    margin-right: 10px;
+  }
